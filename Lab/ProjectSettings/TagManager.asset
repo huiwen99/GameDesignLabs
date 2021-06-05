@@ -20,12 +20,12 @@ TagManager:
   - Obstacles
   - Spawned
   - Brick
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - BG1
+  - BG2
+  - BG3
+  - BG4
+  - BG5
+  - BG6
   - 
   - 
   - 
@@ -48,6 +48,9 @@ TagManager:
     locked: 0
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Ground
+    uniqueID: 3223728243
     locked: 0
   - name: Obstacles
     uniqueID: 109223481
