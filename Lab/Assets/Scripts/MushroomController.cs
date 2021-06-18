@@ -34,6 +34,7 @@ public class MushroomController : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D col)
     {
+        Debug.Log(col);
 
         if (col.gameObject.CompareTag("Pipe"))
         {

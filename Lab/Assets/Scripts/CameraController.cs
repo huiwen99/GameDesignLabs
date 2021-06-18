@@ -11,6 +11,7 @@ public class CameraController : MonoBehaviour
     private float startX; // smallest x-coordinate of the Camera
     private float endX; // largest x-coordinate of the camera
     private float viewportHalfWidth;
+    private AudioSource bgAudioSource;
 
     // Start is called before the first frame update
     void Start()
@@ -23,7 +24,15 @@ public class CameraController : MonoBehaviour
         offset = this.transform.position.x - player.position.x;
         startX = startLimit.transform.position.x + viewportHalfWidth;
         endX = endLimit.transform.position.x - viewportHalfWidth;
-        
+
+        GameManager.OnPlayerDeath += StopMusic;
+        bgAudioSource = GetComponent<AudioSource>();
+
+    }
+
+    void StopMusic()
+    {
+        bgAudioSource.mute = true;
     }
 
     // Update is called once per frame
