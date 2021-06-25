@@ -139,4 +139,9 @@ public class EnemyController : MonoBehaviour
         Debug.Log("Enemy returned to pool");
         yield break;
     }
+
+    private void OnDestroy()
+    {
+        GameManager.OnPlayerDeath -= EnemyRejoice;
+    }
 }

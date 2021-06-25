@@ -8,4 +8,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/MarioLevel2.unity
+    guid: 8d73e110dadd87941974f12c30ea2336
+  - enabled: 1
+    path: Assets/Scenes/MarioLevel1.unity
+    guid: 007007cc65ea4fd4c805a66a4587311e
   m_configObjects: {}

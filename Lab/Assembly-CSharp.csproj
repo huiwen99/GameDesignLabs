@@ -56,16 +56,24 @@
     <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio Tools for Unity\16.0\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\ChangeScene.cs" />
     <Compile Include="Assets\Scripts\CoinController.cs" />
     <Compile Include="Assets\Scripts\SpawnManager.cs" />
+    <Compile Include="Assets\Scripts\EnemyControllerEV.cs" />
     <Compile Include="Assets\Scripts\ParallaxScript.cs" />
     <Compile Include="Assets\Scripts\GameConstants.cs" />
+    <Compile Include="Assets\Scripts\GameEvent.cs" />
     <Compile Include="Assets\Scripts\GameManager.cs" />
+    <Compile Include="Assets\Scripts\IntVariable.cs" />
     <Compile Include="Assets\Scripts\ObjectPooler.cs" />
     <Compile Include="Assets\Scripts\PlayerController.cs" />
+    <Compile Include="Assets\Scripts\GameEventListener.cs" />
+    <Compile Include="Assets\Scripts\SpawnManagerEV.cs" />
     <Compile Include="Assets\Scripts\ConsumableInterface.cs" />
+    <Compile Include="Assets\Scripts\PlayerControllerEV.cs" />
     <Compile Include="Assets\Scripts\QuestionBoxController.cs" />
     <Compile Include="Assets\Scripts\YellowMushroom.cs" />
+    <Compile Include="Assets\Scripts\Singleton.cs" />
     <Compile Include="Assets\Scripts\OrangeMushroom.cs" />
     <Compile Include="Assets\Scripts\CentralManager.cs" />
     <Compile Include="Assets\Scripts\CameraController.cs" />
@@ -73,9 +81,22 @@
     <Compile Include="Assets\Scripts\MenuController.cs" />
     <Compile Include="Assets\Scripts\PlayerMovement.cs" />
     <Compile Include="Assets\Scripts\EnemyController.cs" />
+    <Compile Include="Assets\Scripts\GameUI.cs" />
     <Compile Include="Assets\Scripts\Debris.cs" />
     <Compile Include="Assets\Scripts\PowerupManager.cs" />
     <Compile Include="Assets\Scripts\BreakBrick.cs" />
+    <Compile Include="Assets\Scripts\ScoreMonitor.cs" />
+    <Compile Include="Assets\Scripts\GameManagerEV.cs" />
+    <Compile Include="Assets\Scripts\ChangeSceneEV.cs" />
+    <Compile Include="Assets\Scripts\Inventory.cs" />
+    <Compile Include="Assets\Scripts\Powerup.cs" />
+    <Compile Include="Assets\Scripts\PowerupManagerEV.cs" />
+    <Compile Include="Assets\Scripts\PowerupInventory.cs" />
+    <Compile Include="Assets\Scripts\PowerupEventListener.cs" />
+    <Compile Include="Assets\Scripts\PowerupEvent.cs" />
+    <Compile Include="Assets\Scripts\ConsumableTriggerChecker.cs" />
+    <Compile Include="Assets\Scripts\CastEventListener.cs" />
+    <Compile Include="Assets\Scripts\CastEvent.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

@@ -16,7 +16,10 @@ public class SpawnManager : MonoBehaviour
     {
         GameManager.SpawnEnemy += Spawn;
     }
-
+    private void OnDestroy()
+    {
+        GameManager.SpawnEnemy -= Spawn;
+    }
     // Update is called once per frame
     void Update()
     {

@@ -30,18 +30,18 @@ public class ObjectPooler : MonoBehaviour
 
     public GameObject GetPooledObject(ObjectType type)
     {
-        int activeEnemies = 0;
-        for (int i = 0; i < pooledObjects.Count; i++)
-        {
-            if (pooledObjects[i].gameObject.activeInHierarchy)
-            {
-                activeEnemies += 1;
-            }
-        }
-        if (activeEnemies >= numSpawn)
-        {
-            return null;
-        }
+        //int activeEnemies = 0;
+        //for (int i = 0; i < pooledObjects.Count; i++)
+        //{
+        //    if (pooledObjects[i].gameObject.activeInHierarchy)
+        //    {
+        //        activeEnemies += 1;
+        //    }
+        //}
+        //if (activeEnemies >= numSpawn)
+        //{
+        //    return null;
+        //}
 
         // return inactive pooled object if it matches the type
         for (int i = 0; i < pooledObjects.Count; i++)
@@ -79,18 +79,7 @@ public class ObjectPooler : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        int activeEnemies = 0;
-        for (int i = 0; i < pooledObjects.Count; i++)
-        {
-            if (pooledObjects[i].gameObject.activeInHierarchy)
-            {
-                activeEnemies += 1;
-            }
-        }
-        if (activeEnemies < numSpawn)
-        {
-            CentralManager.centralManagerInstance.newSpawn();
-        }
+
     }
 
     public void increaseNumSpawn()

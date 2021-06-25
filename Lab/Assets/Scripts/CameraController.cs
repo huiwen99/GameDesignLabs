@@ -30,7 +30,7 @@ public class CameraController : MonoBehaviour
 
     }
 
-    void StopMusic()
+    public void StopMusic()
     {
         bgAudioSource.mute = true;
     }

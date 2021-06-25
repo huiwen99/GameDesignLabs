@@ -179,5 +179,8 @@ public class PlayerController : MonoBehaviour
     {
         marioAudioSource.PlayOneShot(marioAudioSource.clip);
     }
-
+    private void OnDestroy()
+    {
+        GameManager.OnPlayerDeath -= PlayerDiesSequence;
+    }
 }
